@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Online Classes
+      </h1>
+      <p id="description" class="description text-center">
+          How helpful has online classes been for you?
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>What grade are you in?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current grade</option>
+          <option value="student">Primary Level (Grade 1 - 6)</option>
+          <option value="job">Highschool (7 - 10)</option>
+          <option value="learner">Senior High (11 - 12)</option>
+          <option value="college">College</option>
+          <option value="preferNo">Prefer not to say</option>
+
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Would you recommend online classes?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What do you like about online class?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">More free time</option>
+          <option value="projects">I can work at my own pace</option>
+          <option value="community">More time to sleep</option>
+          <option value="openSource">All of the above</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>
+          What don't you like about online class?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Slow internet</option>
+          <option value="projects">Teachers don't teach that well online.</option>
+          <option value="community">I don't learn on my own.</option>
+          <option value="community">I don't benefit from modular lessons.</option>
+
+          <option value="openSource">All of the above</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>
+          How can online class be improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Lower tuition</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Have teachers teach</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Give lessons on time</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Give feedback to students</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            class="input-checkbox"
+          />Update students on their grades</label
+        >
+        
+      <div class="form-group">
+        <p>Any comments or suggestions on how online classes can be further improved?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
